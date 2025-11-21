@@ -1,44 +1,7 @@
 layout: {zmk_keyboard: ldt21}
 layers:
-  win:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - P
-  - A
-  - R
-  - S
-  - T
-  - G
-  - M
-  - N
-  - E
-  - I
-  - O
-  - {t: Z, h: LEFT SHIFT}
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - ','
-  - .
-  - {t: /, h: LEFT SHIFT}
-  - LEFT ALT
-  - LEFT WIN
-  - LCTRL
-  - {t: SPACE, h: game}
-  - ENTER
-  - ESCAPE
   mac:
-  - Q
+  - '&td1'
   - W
   - F
   - P
@@ -47,7 +10,7 @@ layers:
   - L
   - U
   - Y
-  - ;
+  - '&td0'
   - A
   - R
   - S
@@ -58,7 +21,7 @@ layers:
   - E
   - I
   - O
-  - {t: Z, h: LEFT SHIFT}
+  - {t: Z, h: LSHIFT}
   - X
   - C
   - D
@@ -67,271 +30,253 @@ layers:
   - H
   - ','
   - .
-  - {t: /, h: LEFT SHIFT}
-  - LCTRL
-  - LEFT ALT
-  - LEFT WIN
-  - {t: SPACE, h: game}
-  - ENTER
-  - ESCAPE
+  - {t: /, h: RSHIFT}
+  - ''
+  - {t: TAB, h: left}
+  - {t: ENTER, h: LGUI}
+  - SPACE
+  - {t: Alt+BSPC, h: right}
+  - ''
+  windows:
+  - '&td1'
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - '&td0'
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - {t: Z, h: LSHIFT}
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - {t: /, h: RSHIFT}
+  - ''
+  - {t: TAB, h: left}
+  - {t: ENTER, h: LCTRL}
+  - SPACE
+  - {t: Ctl+BSPC, h: right_win}
+  - ''
   game:
-  - {t: win, h: toggle}
-  - {t: mac, h: toggle}
-  - '&studio_unlock'
-  - F2
+  - J
+  - Q
+  - W
+  - E
+  - R
+  - J
+  - L
+  - U
+  - Y
+  - '&td0'
+  - T
+  - A
+  - S
+  - D
+  - F
+  - M
+  - N
+  - E
+  - I
+  - O
+  - LSHIFT
+  - LCTRL
+  - X
+  - C
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - {t: /, h: RSHIFT}
+  - ''
+  - TAB
+  - SPACE
+  - SPACE
+  - {t: Ctl+BSPC, h: right_win}
+  - ''
+  right:
+  - F9
+  - F10
+  - F11
   - F12
+  - ''
+  - PG UP
+  - Alt+LEFT
+  - UP
+  - Alt+RIGHT
+  - '&mc2'
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - PG DN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - Gui+Ctl+Q
+  - {t: F1, h: LSHIFT}
+  - F2
+  - F3
+  - F4
+  - ''
+  - HOME
+  - END
+  - ''
+  - ''
+  - LCTRL
+  - ''
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  - ''
+  right_win:
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - PG UP
+  - Ctl+LEFT
+  - UP
+  - Ctl+RIGHT
+  - '&mc3'
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - PG DN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - Gui+L
+  - {t: F1, h: LSHIFT}
+  - F2
+  - F3
+  - F4
+  - ''
+  - HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  - ''
+  left:
+  - '&td5'
+  - '&td3'
+  - '&td4'
+  - '"'
+  - +
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - '&td6'
+  - '@'
+  - '{'
+  - '}'
+  - ''''
+  - '='
+  - '!'
+  - '4'
+  - '5'
+  - '6'
+  - '&td2'
+  - {t: Gui+`, h: Gui+Ctl+LSHIFT}
+  - '['
+  - ']'
+  - '|'
+  - '&'
+  - '0'
   - '1'
   - '2'
   - '3'
-  - BACKSPACE
+  - {t: \, h: RSHIFT}
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - _
+  - {t: '-', h: right}
+  - ''
+  tri:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - BT CLR
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - DELETE
-  - LALT
-  - LWIN
-  - LCTRL
+  - VOL DN
+  - MUTE
+  - VOL UP
+  - '&mc0'
+  - ''
+  - ''
+  - ''
+  - CAPSLOCK
+  - {t: windows, h: toggle}
+  - K
+  - NEXT
+  - PP
+  - PREV
+  - '&mc1'
+  - ''
+  - ''
+  - ''
+  - OUT TOG
+  - {t: game, h: toggle}
+  - ''
+  - BRI DEC
+  - ''
+  - BRI UP
+  - ''
+  - ''
   - {type: held}
-  - ENTER
-  - ESCAPE
-  lower:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {type: held}
+  - ''
 combos:
-- p: [31, 30]
-  k: ENTER
-- p: [32, 31]
-  k: SPACE
-- p: [30, 31, 32]
-  k: DELETE
-- p: [6, 16]
-  k: '['
-  l: [win, mac]
-- p: [7, 17]
-  k: ']'
-  l: [win, mac]
-- p: [7, 16]
-  k: '{'
-  l: [win, mac]
-- p: [17, 8]
-  k: '}'
-  l: [win, mac]
-- p: [17, 26]
-  k: (
-  l: [win, mac]
-- p: [18, 27]
-  k: )
-  l: [win, mac]
-- p: [0, 10]
-  k: '`'
-  l: [win, mac]
-- p: [5, 6]
-  k: '~'
-  l: [win, mac]
-- p: [7, 6]
-  k: +
-  l: [win, mac]
-- p: [16, 17]
-  k: '-'
-  l: [win, mac]
-- p: [27, 26]
-  k: _
-  l: [win, mac]
-- p: [17, 18]
-  k: '='
-  l: [win, mac]
-- p: [14, 4]
-  k: '!'
-- p: [3, 13]
-  k: '|'
-- p: [2, 13]
-  k: $
-- p: [3, 12]
-  k: '%'
-- p: [3, 2]
-  k: '*'
-- p: [13, 12]
-  k: '&'
-- p: [4, 13]
-  k: '#'
-- p: [3, 14]
-  k: \
-- p: [3, 4]
-  k: ^
-- p: [14, 13]
-  k: '@'
-- p: [33, 9]
-  k: Ctl+BSPC
-  l: [win]
-- p: [33, 16]
-  k: Ctl+LEFT
-  l: [win]
-- p: [33, 17]
-  k: Ctl+DOWN
-  l: [win]
-- p: [33, 18]
-  k: Ctl+RIGHT
-  l: [win]
-- p: [33, 7]
-  k: Ctl+UP
-  l: [win]
-- p: [33, 9]
-  k: Alt+BSPC
-  l: [mac]
-- p: [33, 16]
-  k: Alt+LEFT
-  l: [mac]
-- p: [33, 17]
-  k: Alt+DOWN
-  l: [mac]
-- p: [33, 7]
-  k: Alt+UP
-  l: [mac]
-- p: [34, 16]
-  k: LEFT
-- p: [34, 18]
-  k: RIGHT
-- p: [34, 7]
-  k: UP
-- p: [34, 17]
-  k: DOWN
-- p: [10, 11]
-  k: TAB
-- p: [0, 1]
-  k: ESCAPE
-- p: [8, 9]
-  k: BACKSPACE
-- p: [18, 19]
-  k: ENTER
-- p: [33, 18]
-  k: Alt+RIGHT
-  l: [mac]
-- p: [5, 15]
-  k: ''''
-- p: [6, 15]
-  k: '"'
+- p: [20, 21, 22]
+  k: '&caps_word'
+- p: [27, 28, 29]
+  k: Sft+HOME
+- p: [10, 11, 12]
+  k: LALT
+- p: [17, 18, 19]
+  k: RALT
+- p: [1, 2, 3]
+  k: LGUI
+- p: [6, 7, 8]
+  k: RGUI
+- p: [21, 22, 23]
+  k: LCTRL
+- p: [26, 27, 28]
+  k: RCTRL
+- p: [11, 12, 13]
+  k: DEL
+- p: [16, 17, 18]
+  k: BSPC
