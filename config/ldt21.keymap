@@ -283,28 +283,28 @@
     keymap {
         compatible = "zmk,keymap";
 
-        ldt21_layer {
+        win_layer {
             bindings = <
-&kp Q             &kp W  &kp E         &kp R         &kp T      &kp Y        &kp U      &kp I       &kp O    &kp P
-&kp A             &kp S  &kp D         &kp F         &kp G      &kp H        &kp J      &kp K       &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V         &kp B      &kp N        &kp M      &kp COMMA   &kp DOT  &mt LEFT_SHIFT SLASH
+&kp Q             &kp W  &kp F         &kp P         &kp B      &kp J        &kp L      &kp U       &kp Y    &kp P
+&kp A             &kp R  &kp S         &kp T         &kp G      &kp M        &kp N      &kp E       &kp I    &kp O
+&mt LEFT_SHIFT Z  &kp X  &kp C         &kp D         &kp V      &kp K        &kp H      &kp COMMA   &kp DOT  &mt LEFT_SHIFT SLASH
                          &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt 2 SPACE  &kp ENTER  &kp ESCAPE
             >;
 
-            label = "LDT";
+            label = "win";
         };
 
         mac_layer {
-            label = "LDT_";
+            label = "mac";
             bindings = <
-&kp Q             &kp W  &kp E      &kp R         &kp T         &kp Y        &kp U      &kp I       &kp O    &kp P
-&kp A             &kp S  &kp D      &kp F         &kp G         &kp H        &kp J      &kp K       &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X  &kp C      &kp V         &kp B         &kp N        &kp M      &kp COMMA   &kp DOT  &mt LEFT_SHIFT SLASH
+&kp Q             &kp W  &kp F      &kp P         &kp B         &kp J        &kp L      &kp U       &kp Y    &kp SEMI
+&kp A             &kp R  &kp S      &kp T         &kp G         &kp M        &kp N      &kp E       &kp I    &kp O
+&mt LEFT_SHIFT Z  &kp X  &kp C      &kp D         &kp V         &kp K        &kp H      &kp COMMA   &kp DOT  &mt LEFT_SHIFT SLASH
                          &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &lt 2 SPACE  &kp ENTER  &kp ESCAPE
             >;
         };
 
-        number_layer {
+        gaming_layer {
             bindings = <
 &to 0         &to 1         &studio_unlock  &kp F2        &kp F12     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSPACE
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_CLR  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER
@@ -312,7 +312,40 @@
                             &kp LALT        &kp LWIN      &kp LCTRL   &trans  &kp ENTER     &kp ESCAPE
             >;
 
-            label = "Number";
+            label = "game";
+        };
+
+        lower_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "lower";
+        };
+
+        raise_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "raise";
+        };
+
+        adjust_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "adjust";
         };
     };
 };
