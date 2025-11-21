@@ -1,82 +1,82 @@
 layout: {zmk_keyboard: ldt21}
 layers:
-  LDT:
+  win:
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
+  - F
+  - P
+  - B
+  - J
+  - L
   - U
-  - I
-  - O
+  - Y
   - P
   - A
+  - R
   - S
-  - D
-  - F
+  - T
   - G
-  - H
-  - J
-  - K
-  - L
-  - ;
+  - M
+  - N
+  - E
+  - I
+  - O
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
   - {t: /, h: LEFT SHIFT}
   - LEFT ALT
   - LEFT WIN
   - LCTRL
-  - {t: SPACE, h: Number}
+  - {t: SPACE, h: game}
   - ENTER
   - ESCAPE
-  LDT_:
+  mac:
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
+  - F
+  - P
+  - B
+  - J
+  - L
   - U
+  - Y
+  - ;
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
   - I
   - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
   - {t: /, h: LEFT SHIFT}
   - LCTRL
   - LEFT ALT
   - LEFT WIN
-  - {t: SPACE, h: Number}
+  - {t: SPACE, h: game}
   - ENTER
   - ESCAPE
-  Number:
-  - {t: LDT, h: toggle}
-  - {t: LDT_, h: toggle}
+  game:
+  - {t: win, h: toggle}
+  - {t: mac, h: toggle}
   - '&studio_unlock'
   - F2
   - F12
@@ -111,6 +111,117 @@ layers:
   - {type: held}
   - ENTER
   - ESCAPE
+  lower:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  raise:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  adjust:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [31, 30]
   k: ENTER
@@ -120,40 +231,40 @@ combos:
   k: DELETE
 - p: [6, 16]
   k: '['
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [7, 17]
   k: ']'
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [7, 16]
   k: '{'
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [17, 8]
   k: '}'
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [17, 26]
   k: (
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [18, 27]
   k: )
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [0, 10]
   k: '`'
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [5, 6]
   k: '~'
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [7, 6]
   k: +
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [16, 17]
   k: '-'
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [27, 26]
   k: _
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [17, 18]
   k: '='
-  l: [LDT, LDT_]
+  l: [win, mac]
 - p: [14, 4]
   k: '!'
 - p: [3, 13]
@@ -176,31 +287,31 @@ combos:
   k: '@'
 - p: [33, 9]
   k: Ctl+BSPC
-  l: [LDT]
+  l: [win]
 - p: [33, 16]
   k: Ctl+LEFT
-  l: [LDT]
+  l: [win]
 - p: [33, 17]
   k: Ctl+DOWN
-  l: [LDT]
+  l: [win]
 - p: [33, 18]
   k: Ctl+RIGHT
-  l: [LDT]
+  l: [win]
 - p: [33, 7]
   k: Ctl+UP
-  l: [LDT]
+  l: [win]
 - p: [33, 9]
   k: Alt+BSPC
-  l: [LDT_]
+  l: [mac]
 - p: [33, 16]
   k: Alt+LEFT
-  l: [LDT_]
+  l: [mac]
 - p: [33, 17]
   k: Alt+DOWN
-  l: [LDT_]
+  l: [mac]
 - p: [33, 7]
   k: Alt+UP
-  l: [LDT_]
+  l: [mac]
 - p: [34, 16]
   k: LEFT
 - p: [34, 18]
@@ -219,7 +330,7 @@ combos:
   k: ENTER
 - p: [33, 18]
   k: Alt+RIGHT
-  l: [LDT_]
+  l: [mac]
 - p: [5, 15]
   k: ''''
 - p: [6, 15]
